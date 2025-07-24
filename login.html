@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login: Login My Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #003366;
+      font-size: 24px;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      background-color: #0070c9;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #005a9c;
+    }
+
+    .forgot-link {
+      display: block;
+      text-align: right;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .forgot-link a {
+      color: #0070c9;
+      text-decoration: none;
+    }
+
+    .forgot-link a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+    }
+
+  </style>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+<body>
+
+<div class="login-container">
+  <h1> Login</h1>
+  <form action="/error.html">
+    <label for="userId">User ID</label>
+    <input type="text" id="userId" placeholder="Enter your User ID">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your Password">
+
+    <button type="submit">Log In</button>
+
+    
+  </form>
+
+  <div class="footer">
+   
+  </div>
+</div>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Account locked for security reasons. Contact support immediately to restore access. \n📞 Customer Support: +1 (901) 660 3258');
+  });
+</script>
+
+
+
+</body>
+</html>
