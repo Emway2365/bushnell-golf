@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPS Device Update</title>
+  <style>
+    body {
+      background-color: #f0f4ff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .update-container {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 350px;
+      text-align: center;
+    }
+    .update-container img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+    .update-container h2 {
+      margin-bottom: 10px;
+    }
+    .update-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .update-container button {
+      background-color: #0056ff;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .info-box {
+      margin-top: 20px;
+      background-color: #eaf2ff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: left;
+    }
+    .info-box strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="update-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="GPS Icon" />
+    <h2>GPS Device Update</h2>
+    <p>Update your GPS device to start receiving navigation updates</p>
+    <input type="text" placeholder="Device Name (e.g., Garmin, TomTom)" />
+    <input type="text" placeholder="Operating System (e.g., Windows, macOS)" />
+    <a href="/error/"><button>Update Now</button></a>
+    <div class="info-box">
+      <strong>What happens next?</strong>
+      Your GPS device will download the latest map data and navigation updates automatically.
+    </div>
+  </div>
+</body>
+</html>
